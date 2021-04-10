@@ -26,7 +26,7 @@ class Cursus(models.Model):
     help_text='Annee scolaire :'
   )
  def __str__(self):
-    return '{} {}'.format(self.name, self.scholar_year)
+    return '{} {}: {}'.format(self.name,self.year_from_bac,self.scholar_year)
 
 class Student(models.Model):
  first_name = models.CharField(
