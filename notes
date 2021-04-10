@@ -3,3 +3,18 @@ pip install -r requierments.txt
 
 python manage.py make migration
 python manage.py migrate
+
+lycee/templates/lycee/index.html
+{% if liste %}
+  <ul>
+    {% for cursus in liste %}
+      <li><a= href='lycee/{{cursus_id}}'>{{cursus_name}}
+      </a></li>
+    </ul>
+{% else %}
+  <p>No cursus to show</p>
+{% endif %}
+
+
+
+lycee/templates/lycee/views.py
