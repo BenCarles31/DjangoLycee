@@ -23,3 +23,13 @@ def detail(request, cursus_id):
   resp = 'result for cursus {}'.format(cursus_id)
   return HttpResponse(resp)
 
+def detail_student(request, student_id):
+  result_list = Student.objects.get(pk=student_id)
+  
+ #Contexte
+  context = {
+    'liste' : result_list,
+  }
+  return render( request , 'lycee/student/detail_student.html', context)
+  
+  
