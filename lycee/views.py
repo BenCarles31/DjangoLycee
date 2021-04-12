@@ -22,8 +22,15 @@ def index(request):
 
 
 def detail(request, cursus_id):
-  resp = 'result for cursus {}'.format(cursus_id)
-  return HttpResponse(resp)
+  result_list = Student.objects.get(cursus=Student.cursus.name)
+  
+ #Contexte
+  context = {'liste' : result_list}
+  return render( request , 'lycee/cursus/student_list.html', context)
+ 
+ 
+ # resp = 'result for cursus {}'.format(cursus_id)
+ # return HttpResponse(resp)
 
 def detail_student(request, student_id):
   result_list = Student.objects.get(pk=student_id)

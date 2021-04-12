@@ -6,7 +6,7 @@ Rapport de projet Python : LYCEE
 Pré-requis : 
 Version de Django : 3,2
 
-Le projet à été réalise en intégralité sur Repl.it sur un poste Linux.
+Le projet à été réalise en intégralité sur Repl.it sur un poste sous Debian10.
 
 
 Déroulement du cours :
@@ -22,3 +22,9 @@ C’est l’erreur levé pour la page de base (racine non définie « / »), e
 Comme souvent, une faute de frappe, un « = » s’était glissé dans ma balise <anchor>
 
 La fin du cours se déroule sans encombre sauf une petite erreur sur la page detail etudiant, qui ne connais l'objet Student que si on lui declare en temps que model en haut des views.
+
+
+Debut du projet en autonomie.
+
+Je tente d'ameliorer la page detail de cursus pour lui faire afficher la liste des etudiants du cursus en question.
+J'ai un probleme pour recuperer le cursus des etudiants car la relation est de type (1,n).

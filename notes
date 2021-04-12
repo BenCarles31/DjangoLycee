@@ -3,9 +3,12 @@
 pip install django-admin
 pip install -r requierments.txt
 
-#
-
+from lycee.models import Student,Cursus
 
 python manage.py makemigrations
 python manage.py migrate
 
+#Import the populate file
+Switch phone with phone_number
+python manage.py shell 
+import populate_Students3.py
