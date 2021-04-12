@@ -1,0 +1,24 @@
+Benjamin CARLES               Mastère ESI
+
+Rapport de projet Python : LYCEE
+
+
+Pré-requis : 
+Version de Django : 3,2
+
+Le projet à été réalise en intégralité sur Repl.it sur un poste Linux.
+
+
+Déroulement du cours :
+
+Le début du projet est relativement basique, tout est clair dans le cours. 
+Premier accroc sur la gestion de la base, il faut systématiquement import from lycée, j’ai cru pendant un moment que ma base s’effacait.
+
+Problème du lien : Le template me permet bien de créer la page index avec la liste des cursus mais ceux-ci sont affiché dans une simple liste et le lien vers la page du Cursus spécifique ne fonctionne pas pour l’instant.
+
+
+C’est l’erreur levé pour la page de base (racine non définie « / »), elle ne m’indique rien sur l’état du lien, je suis circonspect a ce moment.
+
+Comme souvent, une faute de frappe, un « = » s’était glissé dans ma balise <anchor>
+
+La fin du cours se déroule sans encombre sauf une petite erreur sur la page detail etudiant, qui ne connais l'objet Student que si on lui declare en temps que model en haut des views.

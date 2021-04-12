@@ -1,6 +1,11 @@
+#Au lancement du projet
+
 pip install django-admin
 pip install -r requierments.txt
 
-python manage.py make migration
+#
+
+
+python manage.py makemigrations
 python manage.py migrate
 
