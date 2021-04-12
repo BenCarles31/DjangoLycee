@@ -34,3 +34,5 @@ Je bute aussi sur le fait que la racine du site ne soit pas trouvée. j'essaye d
 
 La création marche tres bien via le boutton sur la page d'acceuil.
 
+J'ai un probleme avec le modify qui demande un Primary Key pour fonctionner et je lui donne un Cursus_id
+
