@@ -25,5 +25,5 @@ urlpatterns = [
     path('lycee/<int:cursus_id>',views.detail, name='detail'),
     path('lycee/student/<int:student_id>', views.detail_student, name='detail_student'),
     path('lycee/student/create', StudentCreateView.as_view(), name='create_student'),
-    path('lycee/student/edit/<studend_pk>', ModifyStudent.as_view(), name='ModifyStudent'),
+    path('lycee/student/edit/<pk>', ModifyStudent.as_view(), name='ModifyStudent'),
 ]
