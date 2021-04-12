@@ -1,6 +1,16 @@
 from django.forms.models import ModelForm
-from .models import Student
+from .models import Student,Presence
 
+class PresenceForm(ModelForm):
+  class Meta:
+    model = Presence
+
+    fields =(
+      "date",
+      "ismissing",
+      "Cause",
+      "students", 
+    )
 class StudentForm(ModelForm):
 
   class Meta():

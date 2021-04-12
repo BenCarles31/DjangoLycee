@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from lycee import views
-from lycee.views import StudentCreateView, ModifyStudent
+from lycee.views import StudentCreateView, ModifyStudent, PresenceCreateView
 
 
 urlpatterns = [
@@ -26,4 +26,7 @@ urlpatterns = [
     path('lycee/student/<int:student_id>', views.detail_student, name='detail_student'),
     path('lycee/student/create', StudentCreateView.as_view(), name='create_student'),
     path('lycee/student/edit/<pk>', ModifyStudent.as_view(), name='ModifyStudent'),
+    path('lycee/student/Presence/', PresenceCreateView.as_view(), name='Presence'),
+    path('lycee/call_of_roll/call_roll', views.callofroll, name='callofroll'),
+    path('lycee/student/presence/<int:presence_id>', views.detailpresence, name='detailpresence'),
 ]

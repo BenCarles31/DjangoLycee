@@ -8,6 +8,12 @@ Version de Django : 3,2
 
 Le projet à été réalise en intégralité sur Repl.it sur un poste sous Debian10.
 
+Annexes : 
+Images dans Annexes/ImageAnnexe
+Notes de fonctionnement dans Annexe/notes
+
+Rapport de projet dans Rendu/RapportdeProjetLycee.txt
+
 
 Déroulement du cours :
 
@@ -35,4 +41,31 @@ Je bute aussi sur le fait que la racine du site ne soit pas trouvée. j'essaye d
 La création marche tres bien via le boutton sur la page d'acceuil.
 
 J'ai un probleme avec le modify qui demande un Primary Key pour fonctionner et je lui donne un Cursus_id
-J'ai trouvé la syntaxe adéquate (<pk> directement). Le modify est foctionnel.
+J'ai trouvé la syntaxe adéquate (<pk> directement). Le modify est foctionnel. (erreur1)
+
+J'ai ajouté les presences, en commencant par le modele, puis l'appel unique sur n'importe quel eleve. 
+Puis j'ai ajouté les appels sur chaque cursus. j'ai un probleme avec ma fonction dans la view qui ne renvoie pas de reponse mais du vide. (erreur2)
+
+
+
+
+
+Bilan du projet:
+
+La page d'acceuil de l'application est fonctionnelle (Ecran1).
+En cliquant sur un cursus, on obtient la liste des eleves y participant. (Ecran2)
+Puis en cliquant sur un eleve on obtient son recap. (Ecran3)
+En cliquans sur "modify" on obtiens le formulaire avec chaque champ editable (Ecran4) puis une fois validé, on a de nouveau le recap avec les nouvelle infos (Ecran5).
+
+Depuis l'ecran d'acceuil on peut egalement cliquer sur "Special Call of roll" qui va permettre d'enregistrer l'absence d'un eleve parmis tous. (Ecran6). On peut voir le resultat dans l'interface admin une fois configurée pour le nouveau modele. (Ecran7)
+
+J'ai toujours le probleme sur l'appel par classe avec la fonction de view qui n'est pas fonctionnelle car elle recoit du vide.
+
+
+
+Finalement j'ai apprecié faire ce projet, je m'y suis prit beaucoup trop tard et ça n'est evidement pas une maniere d'effectuer un travail dans de bonne condition. Cela m'as causé un peu de soucis mais j'ai fait mon possible pour assumer ma terrible gestion du temps. Je suis conscient de rendre le projet avec 24h de retard, j'assume entierment les conséquences que pourrait avoir un tel retard et vous pris de neamoins l'accpter.
+
+
+
+En vous remerciant.
+

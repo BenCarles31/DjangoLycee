@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here
 
-from .models import Student, Cursus
+from .models import Student, Cursus, Presence
 
 class StudentAdmin(admin.ModelAdmin):
   list_display = ("first_name","last_name","email", "phone_number")
@@ -16,5 +16,9 @@ class CursusAdmin(admin.ModelAdmin):
    ['collapse']}),
   ]
 
+class PresenceAdmin(admin.ModelAdmin):
+  fields = ('Cause','date','ismissing', 'student')
+
 admin.site.register(Student,StudentAdmin)
 admin.site.register(Cursus, CursusAdmin)
+admin.site.register(Presence, PresenceAdmin)

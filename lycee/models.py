@@ -80,3 +80,31 @@ class Student(models.Model):
   )
  def __str__(self):
    return '{} {}'.format(self.first_name, self.last_name)
+
+class Presence(models.Model):
+  Cause = models.CharField(
+        verbose_name="cause de l absence",
+        blank=True,
+        null=False,
+        default="Injustifie",
+        max_length=255,
+  )
+  date = models.DateField(
+        verbose_name='dates',
+        blank=False,
+        null=False
+  )
+  ismissing = models.BooleanField(
+    default=True
+  )
+  
+  students = models.ForeignKey(
+    Student,
+    on_delete=models.CASCADE,
+    null=True 
+   )
+  def __str__(self):
+   return '{} {}  {}'.format(self.date, self.students, self.Cause)
+  #student = models.ManyToManyField(
+  #    Student
+  #)

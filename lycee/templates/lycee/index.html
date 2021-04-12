@@ -12,10 +12,15 @@
           <div class='col-sm-2'>
             <a href='lycee/{{cursus.id}}'>{{cursus.name}}</a>
           </div>
+          <a href="lycee/call_of_roll/call_roll">
+            <button type="submit"> Call of roll</button>
+          </a>
         </div>
-    
+       
       {% endfor %}
-      <div class="container">
+    </div>
+
+
         <div class"container">
          <div class ='row'>
           </div>
@@ -26,11 +31,11 @@
          </a>
        </div>
 
-       <div>
-         <a href="lycee/student/student_list">
-          <button class="button radius success right" type="submit">list all student</button>
-         </a>
-       </div>
+        <a href="/lycee/student/Presence/">
+          <button type="submit"> Special Call of roll</button>
+        </a>
+
+   
       </div>
   {% endblock %}
 {% else %}
