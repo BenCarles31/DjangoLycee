@@ -4,7 +4,7 @@ Rapport de projet Python : LYCEE
 
 
 Pré-requis : 
-Version de Django : 3,2
+Version de Django : 3.1.5
 
 Le projet à été réalise en intégralité sur Repl.it sur un poste sous Debian10.
 
