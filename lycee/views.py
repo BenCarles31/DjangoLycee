@@ -22,16 +22,14 @@ def index(request):
 
 
 def detail(request, cursus_id):
-  result_list = Student.objects.get(cursus=Student.cursus.name)
+
+  result_list = Student.objects.filter(cursus=cursus_id)
   
  #Contexte
   context = {'liste' : result_list}
   return render( request , 'lycee/cursus/student_list.html', context)
  
  
- # resp = 'result for cursus {}'.format(cursus_id)
- # return HttpResponse(resp)
-
 def detail_student(request, student_id):
   result_list = Student.objects.get(pk=student_id)
   
@@ -50,3 +48,4 @@ class StudentCreateView(CreateView):
 #Surcharge de la methode get_success_url
   def get_success_url(self):
     return reverse ("detail_student", args=(self.object.pk,))
+

@@ -27,4 +27,10 @@ La fin du cours se déroule sans encombre sauf une petite erreur sur la page det
 Debut du projet en autonomie.
 
 Je tente d'ameliorer la page detail de cursus pour lui faire afficher la liste des etudiants du cursus en question.
-J'ai un probleme pour recuperer le cursus des etudiants car la relation est de type (1,n).
+J'ai un probleme pour recuperer le cursus des etudiants car la relation est de type (1,n), ce qui est logique en soit.
+La liste est debuggé, on obtiens les 25 noms de la classe lorsqu'on clique sur le nom de la formation.
+
+Je bute aussi sur le fait que la racine du site ne soit pas trouvée. j'essaye de la passer sur la page d'acceuil de l'application.
+
+La création marche tres bien via le boutton sur la page d'acceuil.
+

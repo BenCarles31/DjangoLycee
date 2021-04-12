@@ -3,7 +3,7 @@
 
 {% if liste %}
   {% block title %}
-    List of student in the cursus
+    List all student in the cursus
   {% endblock%}
 
   {% block content %}
@@ -11,7 +11,7 @@
       {% for student in liste %}
         <div class='row'>
           <div class='col-sm-2'>
-            <a href='lycee/{{cursus.id}}'>{{cursus.name}}</a>
+            <a href='lycee/student/{{student.id}}'>{{student.first_name}} {{student.last_name}}</a>
           </div>
         </div>
     
